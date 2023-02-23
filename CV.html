@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Philip CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CV.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body class="body" style="
+  background-position: center top;
+  background-size: 100% auto;
+  margin: 0;
+  overflow: hiden;
+  background-color: rgb(68, 68, 68);
+  font-family: Roboto, 'Times New Roman', Times, serif;
+">
+  <div class="flex-box">
+    <div class="page-1">
+      <p class="namn">Philip Frölin</p>
+      <button class="next-button" onclick="downFunction()" id="firstBtn">My Career Journey</button>
+    </div>
+    <div class="page-2" id="page2">
+      <button class="tillbaka" onclick="topFunction()" id="myBtn">&#8896;</button>
+      <div class="page-2-left">
+        <img class="ego-pic" onclick="aboutMe()" src="Styles/CV4.jpg" alt="">
+        <button class="aboutMe" onclick="aboutMe()" id="aboutMe">About me</button>
+      </div>
+      <div class="page-2-right" style="overflow-y:auto;">
+        <h1 class="rubrik">Utbildning</h1>
+        <h2 class="under-rubrik">Ekonomiprogrammet, Västerhöjdsgymnasiet,Skövde</h2>
+        <p class="datum">2014-2017</p>
+        <p class="generell">Företagsekonomi med inriktning marknadsföring, ledarskap och organisation.</p>
+
+
+        <h1 class="rubrik">Arbetserfarehet</h1>
+        <h2 class="under-rubrik">Kundservicemedarbetare Mio AB, Tibro</h2>
+        <p class="datum">Juni 2017 - Februari 2019</p>
+        <p class="generell">Besvara frågor gällande produktfakta, varuförsörjning och kampanjer
+          utifrån information från Mios affärssystem via mejl samt telefon.
+          Hade även handledning och upplärning av nyanställda</p>
+
+
+        <h2 class="under-rubrik">Operativ inköpare Mio AB, Tibro</h2>
+        <p class="datum">Februari 2019 - nuvarande</p>
+        <p class="generell">Säkerställa varutryck i Mios 74 butiker genom orderläggning av ordinarie
+          sortiment, nyheter och kampanjprodukter utefter behovsanalys av försäljning i butik och centrallager.
+          Arbetar i system som stöttar i arbetet kring ett effektivt varuflöde samt med diverse analyser och
+          uppföljningar.
+          Kontakt med leverantörer från övriga Europa och Asien är vanligt förekommande då det ingår i den dagliga
+          driften.
+          Administrering och planering av container och biltrafik.
+        </p>
+
+        <h2 class="under-rubrik">Övrig arbetserfarenhet</h2>
+        <p class="datum">2012 - 2016</p>
+        <p class="generell">Sommarjobb på Mios centrallager/kvalitetsavdelning. Kontrollera och säkerställa kvalite på
+          gods som blivit
+          underkänt. Etikettera om gods.</p>
+      </div>
+    </div>
+    <div class="page-3" id="page3">
+      <button class="tillbaka" onclick="downFunction()" id="myBtn">&#8896;</button>
+      <div class="page-3-left">
+        <div class="kontakt">
+          <h1 class="rubrik">Kontakt</h1>
+          <p class="kontakt-text"><i style="font-size:24px" class="fa">&#xf015;</i> Västralånggatan 93A, 54334 Tibro</p>
+          <p class="kontakt-text"><i style="font-size:21px" class="fa">🕿</i> 0725117495</p>
+          <p class="kontakt-text"><i style="font-size:21px" class="fa">🖄</i> Philip_frolin@hotmail.com</p>
+        </div>
+        <div class="styrkor">
+          <h1 class="rubrik">Styrkor</h1>
+          <ul>
+            <li class="kompetens-text">Ansvarstagande</li>
+            <li class="kompetens-text">Problemlösning</li>
+            <li class="kompetens-text">Analytiskt tänkande</li>
+            <li class="kompetens-text">Stresstålig</li>
+            <li class="kompetens-text">Noggrann</li>
+            <li class="kompetens-text">Lagspelare</li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-3-right">
+        <h1 class="rubrik">Övriga meriter</h1>
+        <ul>
+          <li class="kompetens-text">Intresse för teknik, data och IT</li>
+          <li class="kompetens-text">B-körkort</li>
+          <li class="kompetens-text">Fysiskt aktiv</li>
+          <p class="datum">Styrketräning samt innebandy i Tibros herrlag</p>
+        </ul>
+
+        <h1 class="rubrik-2">Språk</h1>
+        <ul>
+          <li class="kompetens-text">Svenska</li>
+          <p class="datum">Modersmål</p>
+          <li class="kompetens-text">Engelska</li>
+          <p class="datum">Mycket god kunskap i tal och skrift</p>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="CV.js"></script>
+</body>
+
+</html>
