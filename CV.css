@@ -4,6 +4,7 @@ html {
 
 .body {
   background-image: url(Styles/fyrkant.jpg);
+  overflow: hidden;
 }
 
 .flex-box {
@@ -270,9 +271,10 @@ html {
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 1200px) {
   .body {
-    background: none;
+    background: noe;
+    overflow: scroll;
   }
 
   .page-2 {
@@ -289,7 +291,7 @@ html {
   .page-2-right {
     position: absolute;
     width: 90%;
-    height: 53%;
+    height: 65%;
     top: 30%;
 
   }
@@ -315,14 +317,25 @@ html {
   .page-3 {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-start;
+  }
+
+  .page-3-left {
+    width: 90%;
+    top: 5%;
+    height: 40%;
+    margin-bottom: 0;
   }
 
   .page-3-right {
-    width: 91%;
-    height: 380px;
+    width: 90%;
+    height: 30%;
     margin-top: 2px;
-    margin-bottom: 180px;
+    top: 47px;
+  }
+
+  .rubrik-2 {
+    margin-top: 20px;
   }
 
   .page-2-left {
@@ -342,6 +355,18 @@ html {
   }
 
   .tillbaka {
-    left: 45%;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1900px) {
+  .body {
+    overflow: scroll;
+  }
+
+  .under-rubrik {
+    font-size: medium;
+    margin-top: 20px;
+    margin-left: 10px;
   }
 }
